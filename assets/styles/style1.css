@@ -1,0 +1,326 @@
+:root{
+    --black1: rgb(32, 30, 30);
+    --white1: rgb(241, 230, 230);
+    --color1:rgb(155, 147, 147);
+}
+@font-face {
+    font-family: "Merriweather";
+    src: url(../font/Merriweather-Light.ttf);
+}
+@font-face {
+    font-family: "Inter";
+    src: url(../font/Inter_24pt-ExtraBold.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/bg.jpg) fixed center/cover;
+    min-height: 100vh;
+    text-align: center;
+    font-family: "Merriweather", sans-serif;
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+h1{
+    font-family: "Inter", sans-serif;
+    font-size: 2.9rem;
+    text-transform: uppercase;
+    /* width: 40%; */
+    color: var(--white1);
+    letter-spacing: 3px;
+}
+h2{
+    font-family: "Inter", sans-serif;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    color: var(--black1);
+    letter-spacing: 6px;
+}
+h3{
+    font-family: "Inter", sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--black1);
+    letter-spacing: 2px;
+}
+button{
+    border: 1px solid var(--black1);
+    padding: 5px 20px;
+    font-size: 0.5rem;
+    font-family: "inter", sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+/* **********************HEADER********************** */
+header{
+    /* background: var(--black1); */
+    color: var(--white1);
+    width: 90%;
+    margin: 0 auto;
+}
+.text-header{
+    /* border: 1px solid red; */
+   width: 80%;
+   margin: 250px auto 120px;
+
+}
+.text-header h1{
+    padding: 90px 0 80px;
+    width: 80%;
+    margin: 0 auto;
+    letter-spacing: 3px;
+   
+}
+.text-header p{
+    padding-bottom: 60px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.text-header a{
+    display: inline-block;
+    border: 1px solid var(--white1);
+    color: var(--white1);
+    padding: 10px;
+    border-radius: 100px;
+    font: 44px;
+    width: 44px;
+}
+
+/* ********************* NAV *************************************/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+    /* background: rgba(0, 0, 0, 0.103); */
+    background: rgba(255, 255, 255, 0.171);
+}
+.nav ul{
+    display: flex;
+}
+.nav li{
+    padding: 15px 10px;
+    /* border: 1px solid rgb(192, 185, 185); */
+}
+.nav ul li:first-of-type{
+    background: rgb(231, 224, 224);
+}
+.nav li:hover{
+    background: red;
+}
+.nav li:hover a{
+    color: red;
+}
+.nav1{
+    color: black;
+}
+nav a{
+    color: var(--white1);
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    font-family: "Merriweather", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.icons-nav span{
+     margin: 15px 15px; 
+    /* border: 1px solid red; */
+}
+/* ********************* MAIN ***************** */
+main{
+    width: 90%;
+    margin: 0 auto;
+    background: var(--white1);
+    
+}
+.section1{
+    padding: 40px;
+    /* border: 1px solid red; */
+}
+p.date{
+    font-size: 0.8rem;
+    position: relative;
+    border: 1px solid red;
+    margin: 20px 0;
+}
+p.date::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 30%;
+    background: var(--black1);
+    left: 0;
+    top: 9px;
+    
+}
+p.date::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 30%;
+    background: var(--black1);
+    right: 0;
+    top: 9px;  
+}
+h2{
+    width: 80%;
+   
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* MAIN: SECTION 1 */
+.section1 .text{
+    /* border: 1px solid red; */
+    line-height: 35px;
+    font-size: 0.6rem;
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.img-main{
+    /* border: 1px solid red; */
+    min-height: 35vh;
+    background:url(../img/pic01.jpg) center/cover;
+    margin-bottom: 20px;
+}
+
+/* MAIN: SECTION 2 */
+.section2{
+    /* padding: 20px; */
+    display: flex;
+    border-top: 1px solid rgb(219, 206, 206);
+}
+.section2-part{
+    padding: 20px;
+}
+.section2-part .date2{
+    padding-bottom: 15px;
+    color: rgb(175, 169, 169);
+    font-size: 0.6rem;
+    font-weight: 800;
+}
+.section2-part h3{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border: 1px solid red;
+}
+.section2-part p{
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: left;
+    font-size: 0.5rem;
+    line-height: 20px;
+}
+.img-container{
+    min-height: 15vh;
+    width: 80%;
+    margin: 10px auto;
+}
+.section2-left {
+    border-right: 1px solid rgb(219, 206, 206);
+
+}
+.section2-left .img-container{
+    background: url(../img/pic02.jpg) center/cover;
+}
+.section2-rigth .img-container{
+    background: url(../img/pic03.jpg) center/cover;
+}
+
+footer{
+    width: 90%;
+    margin: 15px auto 30px;
+    background: rgb(228, 227, 227);
+    min-height: 40vh;
+    display: flex;
+}
+.footer-left{
+    padding: 20px;
+    border-right: 1px solid rgb(146, 142, 142);
+    width: 50%;
+    text-align: left;
+    
+}
+.grid-form{
+    font-family:"Merriweather";
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.4rem;
+    font-weight: 500;
+    display: grid;
+    grid-template-rows: 10px 30px 10px 30px 10px 130px;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input,textarea{
+    border: 1px solid rgb(209, 208, 208);
+    background: rgb(228, 227, 227);
+}
+textarea{
+    resize: none;
+}
+
+.footer-rigth{
+    width: 50%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.footer-rigth > div{
+    border-bottom: 1px solid rgb(209, 208, 208);
+    height: 98px;
+    display: flex;
+    align-items: center;
+}
+.footer-rigth h5{
+    margin: 0 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.4rem;
+}
+.footer-rigth > div p{
+    font-size: 0.5rem;
+    color: rgb(145, 140, 140);;
+}
+.adress p{
+    width: 40%;
+    border: 1px solid red;
+}
+footer .icons{
+    border: 1px solid red;
+    width: 60%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+}
+footer .icons span{
+    margin: 0 10px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px 5px;
+    border-radius: 250px;
+    /*height: 20px;
+     width: 20px;
+     display: inline-block;
+     position: relative; */
+}
+footer .icons i{
+    font-size: 0.7rem;
+    /* position: absolute;
+    left: 25%;
+   top: 20%; */
+}
